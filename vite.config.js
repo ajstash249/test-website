@@ -1,11 +1,11 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/test-website/',   // 👈 IMPORTANT: update this
+  base: '/test-website/',   // 👈 THIS must match your repo name exactly
   build: {
-    outDir: 'docs',
+    outDir: 'docs',         // 👈 This is what GitHub Pages will serve
   },
-})
+});
+
